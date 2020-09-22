@@ -4,7 +4,7 @@ import cv2 as cv
 face_cascade = cv.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # Open video
-video_cap = cv.VideoCapture("vid.mp4") # 0 means open firs webcam
+video_cap = cv.VideoCapture("vid.mp4") # 0 means open webcam
 
 while True:
     # Get a frame from the webcam

@@ -4,7 +4,7 @@ import cv2 as cv
 face_cascade = cv.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # Open video
-video_cap = cv.VideoCapture("vid.mp4") # TODO: 0 means open firs webcam
+video_cap = cv.VideoCapture("vid.mp4") # 0 means open firs webcam
 
 while True:
     # Get a frame from the webcam
@@ -20,7 +20,7 @@ while True:
         cv.rectangle(frame, (x, y), (x+w, y+h), (255, 100, 0), 2)
 
     # Show annotated frame
-    cv.imshow("Face detection", frame) # TODO: dezactiveaza linia si _
+    cv.imshow("Face detection", frame)
     # Quit loop
     if cv.waitKey(1) == ord("q"):
         break

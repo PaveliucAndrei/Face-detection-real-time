@@ -22,7 +22,7 @@ while True:
     # Show annotated frame
     cv.imshow("Face detection", frame)
     # Quit loop
-    if cv.waitKey(1) == ord("q"):
+    if cv.waitKey(1) == ord("q") or cv.getWindowProperty("Coin detection video",cv.WND_PROP_VISIBLE) == 0:
         break
 # End while
 

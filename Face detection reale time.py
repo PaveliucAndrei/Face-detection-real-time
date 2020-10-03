@@ -22,11 +22,11 @@ while True:
     # Show annotated frame
     cv.imshow("Face detection", frame)
     # Quit loop
-    if cv.waitKey(1) == ord("q") or cv.getWindowProperty("Coin detection video",cv.WND_PROP_VISIBLE) == 0:
+    if cv.waitKey(1) == ord("q"): #or cv.getWindowProperty("Coin detection video",cv.WND_PROP_VISIBLE) == 0:
         break
 # End while
 
 # Close video feed
-video_cap.relese()
+video_cap.release()
 # Close all windows
 cv.destroyAllWindows()
